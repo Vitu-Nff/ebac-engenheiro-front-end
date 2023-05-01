@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
+  <title>EBAC - Exercício HTML </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      background-color: #F2F2F2;
+      border-radius: 10px;
+      padding: 40px;
+    }
+    
+    form input {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    
+    form button {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #0066FF;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <img src="./resources/img/logo.png" alt="Logo EBAC" style="max-width: 120px; margin: auto; margin-bottom: 30px;">
+      <input type="text" name="name" placeholder="Nome">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Senha">
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</body>
+</html>
