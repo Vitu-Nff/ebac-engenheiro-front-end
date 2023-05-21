@@ -36,14 +36,14 @@ function updateHints() {
   var campoB = document.getElementById('campoB').value;
   var hintA = document.getElementById('hintCampoA');
   var hintB = document.getElementById('hintCampoB');
-
+  
   if(!campoB) {
     hintA.style.color = "black";
     hintB.style.color = "black";
     return
   }
 
-  if(campoB <= campoA ) {
+  if( campoB <= campoA ) {
     hintA.style.color = "red";
     hintB.style.color = "red";
   }

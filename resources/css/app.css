@@ -64,7 +64,6 @@ input[type=submit] {
   padding: 0;
   max-height: 0px;
   overflow: hidden;
-  transition: 0.15s ease;
 }
 
 input[type=number]:focus ~.hint{
