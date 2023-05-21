@@ -4,251 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
+    <title>EBAC - Formulário HTML/JS</title>
     <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
     <link rel="stylesheet" href="./resources/css/app.css" />
-</head>
 <body>
-    <header>
-        <div class="container">
-            <div class="title">
-                <img src="./resources/assets/ebac.svg" alt="EBAC - Escola Britânica de Artes Criativas e Tecnologia">
-                <h1>Notícias EBAC</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#esportes" title="Ir para a seção de esportes">Esportes</a>
-                    </li>
-                    <li>
-                        <a href="#economia" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#games" title="Ir para a seção de games">Games</a>
-                    </li>
-                    <li>
-                        <a href="#gastronomia" title="Ir para a seção de gastronomia">Gastronomia</a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="center">
+        <div class="header">
+            <h1>Formulário</h1>
+            <h6>Tarefa de Integração HTML e JavaScript <br>
+            Insira dois números abaixo para validar o JavaScript.
+            </h6>
         </div>
-    </header>
-    <div class="container">
-        <section id="esportes">
-            <h2>Esportes</h2>
-            <div class="articles">
-                <article>
-                    <img src="./resources/assets/img/futebol.jpg" height="182px" alt="Bola de futebol no gramado" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Grande clássico na noite de hoje</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/futebol-americano.jpg" height="182px" alt="Jogador de futebol americano correndo com a bola na mão" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Noite do Superbowl</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/basquete.jpg" height="182px" title="Vista aérea de uma quadra de basquete" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Notícia sobre a NBA</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/basquete.jpg" height="182px" title="Vista aérea de uma quadra de basquete" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Notícia sobre a NBA</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
+        <form id="form">
+            <div class="formGroup">
+                <label for="campoA">Campo A</label>
+                <input type="number" placeholder="Insira seu 1º Número" id="campoA" name="campoA" required><br>
+                <h6 id="hintCampoA" class="hint"> O 2º Número deve ser maior que o 1º Número.</h6>
             </div>
-        </section>
-        <section id="economia">
-            <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./resources/assets/img/dolares.jpg" height="182px" alt="Muitos dólares" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Dólar em alta de 0.50%</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/euro.jpg" height="182px" alt="Várias notas de euro" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Euro em queda de 0.40%</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/petroleo.jpg" height="182px" alt="Extração de petróleo" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Alta no preço do barril do petróleo</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
+            <div class="formGroup">
+                <label for="campoB">Campo B</label>
+                <input type="number" placeholder="Insira seu 2º Número" id="campoB" name="campoB" hint="O 2º Número deve ser maior que o 1º Número." required><br>
+                <h6 id="hintCampoB" class="hint"> O 2º Número deve ser maior que o 1º Número.</h6>
             </div>
-        </section>
-        <section id="games">
-            <h2>Games</h2>
-            <div class="articles">
-                <article>
-                    <img src="./resources/assets/img/playstation.jpeg" height="182px" alt="Playstation apresenta novidades" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Sony anuncia novos jogos</h3>
-                        <p>
-                            A Sony, uma das principais empresas do setor de jogos, acaba de anunciar novidades para seus fãs. Durante um evento online, a empresa revelou uma série de novos jogos que serão lançados em breve para o PlayStation 5 e outros consoles da marca.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/xbox.jpg" height="182px" alt="Novo serviço da Xbox" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Microsoft apresenta novo serviço</h3>
-                        <p>
-                            A Microsoft, empresa por trás do Xbox, acaba de anunciar um novo serviço que promete revolucionar a forma como as pessoas jogam. 
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/nintendo.jpg" height="182px" alt="Nintendo saiu na frente" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Nintendo alavanca vendas</h3>
-                        <p>
-                            A Nintendo, empresa japonesa conhecida por seus consoles portáteis e jogos divertidos, está comemorando um aumento nas vendas. 
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/playstation.jpeg" height="182px" alt="Playstation apresenta novidades" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Sony anuncia novos jogos</h3>
-                        <p>
-                            A Sony, uma das principais empresas do setor de jogos, acaba de anunciar novidades para seus fãs. Durante um evento online, a empresa revelou uma série de novos jogos que serão lançados em breve para o PlayStation 5 e outros consoles da marca.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section id="gastronomia">
-            <h2>Gastronomia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./resources/assets/img/restaurante.jpeg" height="182px" alt="Rstaurante em SP" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Novo restaurante em São Paulo</h3>
-                        <p>
-                            O renomado chef de cozinha Pedro Almeida, conhecido por seus pratos sofisticados e criativos, abriu as portas de seu novo restaurante em São Paulo. 
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/foodpark.jpg" height="182px" alt="Foodpark RJ" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Novo Foodpark RJ</h3>
-                        <p>
-                            Os food parks, espaços que reúnem várias opções gastronômicas em um só lugar, têm se tornado cada vez mais populares no Brasil. Agora, os moradores do Rio de Janeiro contam com mais uma opção: o recém-inaugurado food park na zona sul da cidade. 
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/organicos.jpeg" height="182px" alt="Orgânicos são destaque" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Destaque: Alimentos orgânicos</h3>
-                        <p>
-                            Cada vez mais pessoas têm se preocupado em consumir alimentos mais saudáveis e sustentáveis. E essa tendência se reflete em eventos gastronômicos, como a Feira de Gastronomia Orgânica que acaba de acontecer em São Paulo. 
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./resources/assets/img/foodpark.jpg" height="182px" alt="Foodpark RJ" />
-                    <div class="content">
-                        <header>
-                            <time class="creation-date">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Novo Foodpark RJ</h3>
-                        <p>
-                            Os food parks, espaços que reúnem várias opções gastronômicas em um só lugar, têm se tornado cada vez mais populares no Brasil. Agora, os moradores do Rio de Janeiro contam com mais uma opção: o recém-inaugurado food park na zona sul da cidade. 
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+            <h6 id="message" class="hide"></h6>
+            <input type="submit" value="Enviar">
+        </form>
     </div>
+    <script src="./resources/js/main.js"></script>
 </body>
 </html>

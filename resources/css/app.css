@@ -7,172 +7,118 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a { 
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-body > header {
-  padding: 16px 0px;
-  color: #323233;
-  > .container { 
-    background: #f7f7f9;
-    padding: 20px 24px;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    border-radius: 16px;
-
-    .title {
-      display: flex;
-      > h1 {
-        padding: 3px 16px;
-        border-radius: 8px;
-        background-color: rgba(0,0,0,0.05);
-      }
-      > img {
-        margin-right: 24px;
-        width: 115px;
-        height: 42px;
-      }
-    }
-
-  }
-}
-
-header li {
-  display: inline;
-  margin: 0px 16px;
-  > a {
-    transform: color 0.3s;
-    color: rgba(0,0,0,0.9);
-    font-weight: 500;
-    transition: color 0.3s;
-    &:hover {
-      text-decoration: none;
-      color: rgba(24, 100, 163, 0.9);
-    }
-  }
-}
-
-.container {
-  width: 1366px;
-  margin: 0 auto;
-}
-
-.articles {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  > article {  
-    width: 21%;
-    background: rgba( 255,255,255,0.8);
-    overflow: hidden;
-    border-radius: 16px;
-    > img { 
-      /* height: 180px;  */
-      width: 100%;
-    }
-    .content {
-      padding: 14px 20px 14px 20px;
-      > h3 { 
-        margin: 8px 0px;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-                line-clamp: 1; 
-        -webkit-box-orient: vertical;
-      }
-      > p { 
-        font-family: Arial, Helvetica, sans-serif;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-                line-clamp: 4; 
-        -webkit-box-orient: vertical;
-      }
-      > a { 
-        font-weight: bold;
-        padding: 6px 16px; 
-        margin-top: 16px;
-        color: #f3f3f3; 
-        background: rgb(62, 134, 192); 
-        display: inline-block;
-        transition: background 0.1s ease-in;
-        border-radius: 8px;
-        &:hover {
-          background: rgb(38, 92, 136); 
-        }
-      }
-    }
-  }
-  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5;
 }
 
-section { 
-  padding: 16px 32px;
-  border-radius: 16px;
-  margin: 24px 0px;
+h6 {
+  font-weight: normal;
+  opacity: 0.8;
 }
 
-section h2 {
-  font-size: 38px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  width: 100%;
+.header {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.center {
   text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  width: 330px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  background-color: #fff;
 }
 
-section h2, .articles article { 
-  margin-bottom: 24px
+.image {
+  width: 160px;
+  height: 100px;
 }
 
-#esportes {
-  background: rgba(0, 140, 255, 0.1);
-  > h2 { color: rgba(0, 140, 255, 0.8); }
-  .articles > article div > a {
-    background: rgba(0, 140, 255, 0.8); 
-    &:hover {
-      background: rgb(0, 140, 255); 
-    }
-  }
+input[type=number] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.35rem;
 }
 
-#economia {
-  background: rgba(0, 139, 46, 0.1);
-  > h2 { color: rgba(0, 139, 46, 0.8); }
-  .articles > article div > a {
-    background: rgba(0, 139, 46, 0.8); 
-    &:hover {
-      background: rgb(0, 139, 46, 255); 
-    }
-  }
+input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
 }
 
-#games {
-  background: rgba(50, 0, 40, 0.1);
-  > h2 { color: rgba(50, 0, 40, 0.8);  }
-  .articles > article div > a {
-    background: rgba(50, 0, 40, 0.8); 
-    &:hover {
-      background: rgb(50, 0, 40, 255); 
-    }
-  }
+.hint {
+  opacity: 0;
+  padding: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.15s ease;
 }
 
-#gastronomia {
-  background: rgba(140, 80, 0, 0.1);
-  > h2 { color: rgba(140, 80, 0, 0.8); }
-  .articles > article div > a {
-    background: rgba(140, 80, 0, 0.8); 
-    &:hover {
-      background: rgb(140, 80, 0, 255); 
-    }
-  }
+input[type=number]:focus ~.hint{
+  padding: 3px;
+  max-height: 20px;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+#form {
+  text-align: left;
+}
+
+#form .formGroup {
+  margin-top: 1.5rem;
+}
+
+#form label{
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 6px;
+  padding: 4px 6px;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+#form #message.error {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+#form #message.success {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.05);
+}
+
+#form #message.hide {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#form #message {
+  border-radius: 8px;
+  transition: 0.35s ease;
+  padding: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-height: 50px;
+  overflow: hidden;
+  opacity: 1;
 }
