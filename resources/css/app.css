@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
  /* Reset csss */
  * {
   box-sizing: border-box;
@@ -7,117 +9,141 @@
 }
 
 body {
+  background: #f1f1f1;
+  font-family: 'Architects Daughter', cursive;
   display: flex;
-  justify-content: center;
+  min-width: 100vh;
+  min-height: 100vh;
   align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f5;
+  justify-content: center;
+  flex-direction: column;
 }
 
-h6 {
-  font-weight: normal;
-  opacity: 0.8;
+.app-container {
+  min-height: 80vh;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 8px; 
+  padding-bottom: 40px;
 }
 
-.header {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+header {
+  padding: 24px 0px;
 }
 
-.center {
+h1 {
   text-align: center;
-  border-radius: 15px;
-  padding: 30px;
-  width: 330px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  background-color: #fff;
 }
 
-.image {
-  width: 160px;
-  height: 100px;
+form {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
 }
 
-input[type=number] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 0.35rem;
+#taskForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border-bottom: 1px solid #000;
 }
 
-input[type=submit] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
+#taskForm:focus > #taskInput, #taskForm:hover > #taskInput, #taskInput:focus {
+  outline: none;
+  opacity: 1;
+}
+
+#taskForm:focus > button, #taskForm:hover > button, #taskInput:focus ~ button {
+  opacity: 1;
+}
+
+#taskInput {
+  flex-grow: 1;
   border: none;
-  border-radius: 8px;
-  background-color: #007BFF;
-  color: #fff;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+#taskForm button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 20px;
+  display: inline;
   cursor: pointer;
-}
-
-.hint {
+  height: 30px !important;
+  width: 30px !important;
+  color: white;
+  background: #dbdbdb;
   opacity: 0;
-  padding: 0;
-  max-height: 0px;
-  overflow: hidden;
+  transition: opacity 0.15s;
+  font-family: Arial;
+  > span {
+    padding-top: 2px;
+    height: 5px;
+    width: 5px;
+    display: block;
+    line-height: 0px;
+  }
 }
 
-input[type=number]:focus ~.hint{
-  padding: 3px;
-  max-height: 20px;
-  overflow: hidden;
+input, button {
+  font-family: 'Architects Daughter', cursive;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border: none !important;
+  border-radius: 5px;
+  outline: none !important;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  box-sizing: border-box;
+  padding: 12px;
+  padding-left: 20px;
+  border-bottom: 1px solid black !important;
+  position: relative;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+
+li:hover {
+  opacity: 1;
+}
+
+li:hover::before {
   opacity: 0.6;
 }
 
-input[type=submit]:hover {
-  background-color: #0056b3;
+li:last-child {
+  border-bottom: none;
 }
 
-#form {
-  text-align: left;
+li.done {
+  text-decoration: line-through;
+  opacity: 0.3;
 }
 
-#form .formGroup {
-  margin-top: 1.5rem;
-}
-
-#form label{
-  background-color: rgba(0,0,0,0.05);
-  border-radius: 6px;
-  padding: 4px 6px;
-  font-size: 0.8rem;
-  opacity: 0.8;
-}
-
-#form #message.error {
-  color: red;
-  background-color: rgba(255, 0, 0, 0.05);
-}
-
-#form #message.success {
-  color: green;
-  background-color: rgba(0, 128, 0, 0.05);
-}
-
-#form #message.hide {
-  max-height: 0px;
-  overflow: hidden;
+li::before {
+  content: '\2610';
+  position: absolute;
+  left: 2px;
   opacity: 0;
-  padding: 0;
-  margin: 0;
+  transition: all 0.2s;
 }
 
-#form #message {
-  border-radius: 8px;
-  transition: 0.35s ease;
-  padding: 8px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  max-height: 50px;
-  overflow: hidden;
-  opacity: 1;
+li.done::before {
+  content: '\2611';
 }
