@@ -56,28 +56,23 @@ $(document).ready(function () {
     },
     messages: {
       descNome: {
-        required: "Por favor, insira seu nome completo.",
-        nome: "Por favor, insira seu nome e sobrenome."
+        required: "Por favor, insira seu nome completo."
       },
       numCpf: {
-        required: "Por favor, insira seu CPF.",
-        cpf: "Por favor, insira um CPF válido."
+        required: "Por favor, insira seu CPF."
       },
       numTelefone: {
-        required: "Por favor, insira seu telefone.",
-        telefone: "Por favor, insira um telefone válido."
+        required: "Por favor, insira seu telefone."
       },
       email: {
         required: "Por favor, insira seu email.",
         email: "Por favor, insira um email válido."
       },
       descEndereco: {
-        required: "Por favor, insira seu endereço.",
-        endereco: "Por favor, insira um endereço válido."
+        required: "Por favor, insira seu endereço."
       },
       numCep: {
-        required: "Por favor, insira seu CEP.",
-        cep: "Por favor, insira um CEP válido."
+        required: "Por favor, insira seu CEP."
       }
     },
     submitHandler: function(form, event) {
@@ -111,4 +106,4 @@ $(document).ready(function () {
     return this.optional(element) || /\b\w+\b.*\b\w+\b/.test(value)
   }, "Por favor, insira seu endereço completo.")
 
-})
+});
