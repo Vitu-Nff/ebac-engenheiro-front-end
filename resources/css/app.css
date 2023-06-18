@@ -7,10 +7,12 @@
 }
 
 body {
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: start;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f0f0f5;
 }
@@ -29,7 +31,7 @@ h6 {
   text-align: center;
   border-radius: 15px;
   padding: 30px;
-  width: 330px;
+  max-width: 600px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
   background-color: #fff;
 }
@@ -39,8 +41,8 @@ h6 {
   height: 100px;
 }
 
-input[type=number] {
-  width: 100%;
+input {
+  width: 100% !important;
   padding: 10px;
   margin: 10px 0;
   border-radius: 8px;
@@ -66,7 +68,7 @@ input[type=submit] {
   overflow: hidden;
 }
 
-input[type=number]:focus ~.hint{
+input:focus ~.hint{
   padding: 3px;
   max-height: 20px;
   overflow: hidden;
@@ -83,6 +85,20 @@ input[type=submit]:hover {
 
 #form .formGroup {
   margin-top: 1.5rem;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#form .formRow {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #form .formRow {
+    flex-direction: column;
+  }
 }
 
 #form label{
@@ -91,6 +107,9 @@ input[type=submit]:hover {
   padding: 4px 6px;
   font-size: 0.8rem;
   opacity: 0.8;
+  > span {
+    color: red;
+  }
 }
 
 #form #message.error {
@@ -120,4 +139,30 @@ input[type=submit]:hover {
   max-height: 50px;
   overflow: hidden;
   opacity: 1;
+}
+
+#form .invalid-feedback {
+    color: red;
+    font-size: 0.65rem;
+    background-color: unset;
+}
+
+#form .is-invalid {
+    border-color: red;
+}
+
+#form .is-valid {
+    border-color: green;
+    background-color: #00800005;
+}
+
+#form .hidden {
+    display: none;
+}
+
+#form #submitMessage.success {
+    color: green;
+    display: block;
+    text-align: center;
+    font-size: small;
 }
