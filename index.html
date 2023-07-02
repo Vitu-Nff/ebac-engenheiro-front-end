@@ -4,53 +4,81 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EBAC - Formulário HTML/JS</title>
+        <title>EBAC - Loja EBAC</title>
         <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
         <link rel="stylesheet" href="./resources/css/app.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <body>
-        <div class="center">
-            <div class="header">
-                <h1>Formulário</h1>
-                <h6>com Plugins jQuery</h6>
+    <header>
+            <div class="container">
+                <img src="./resources/assets/ebac_white.svg" alt="Logo da Loja EBAC">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                    </ul>
+                </nav>
             </div>
-            <form id="form">
-                <div class="formRow">
-                    <div class="formGroup">
-                        <label for="descNome">Nome Completo <span>*</span></label>
-                        <input type="text" id="DescNome" name="descNome" required><br>
-                    </div>
-                    <div class="formGroup">
-                        <label for="numCpf">CPF <span>*</span></label>
-                        <input type="text" id="NumCpf" name="numCpf" required><br>
-                    </div>
-                </div>
-                <div class="formRow">
-                    <div class="formGroup">
-                        <label for="numTelefone">Telefone <span>*</span></label>
-                        <input type="text" id="NumTelefone" name="numTelefone" required><br>
-                    </div>
-                    <div class="formGroup">
-                        <label for="email">E-mail <span>*</span></label>
-                        <input type="text" id="Email" name="email" required><br>
+        </header>
+        <main>
+            <section>
+                <div class="container" id="sobre">
+                    <img src="https://unsplash.it/600/400?image=201" alt="">
+                    <div>
+                        <h2 style="margin-bottom: 8px;">Sobre a Loja EBAC</h2>
+                        <h4 style="margin-top: 0px; font-weight: normal; opacity: 0.4;">A loja dos amantes de Tênis</h4>
+                        <p>A Loja EBAC é a loja virtual de referência para todos os entusiastas de tênis. Trabalhamos com as marcas mais renomadas do mercado,
+                            oferecendo uma ampla gama de tênis para todas as necessidades e estilos. Seja para atividades esportivas, casual ou para fashionistas,
+                            temos o par perfeito para você. Nosso compromisso é com a qualidade, conforto e estilo. Navegue em nossa loja e descubra o par de tênis
+                            que foi feito para você.</p>
                     </div>
                 </div>
-                <div class="formRow">
-                    <div class="formGroup">
-                        <label for="descEndereco">Endereço Completo <span>*</span></label>
-                        <input type="text" id="DescEndereco" name="descEndereco" required><br>
-                    </div>
-                    <div class="formGroup">
-                        <label for="numCep">CEP <span>*</span></label>
-                        <input type="text" id="NumCep" name="numCep" required><br>
+            </section>
+            <section id="produtos">
+                <div class="container">
+                    <h2>Produtos</h2>
+                    <p>Conheça nossa seleção de tênis</p>
+                    <div class="grid-produtos">
+                        <article>
+                            <div>
+                                <img src="./resources/assets/img/1.webp" height="200px" width="200px" alt="Tenis Advance XR-1">
+                                <h3>Tenis Advance XR-1</h3>
+                                <p>Um tênis feito para quem busca conforto e performance em suas corridas. Com tecnologia avançada de amortecimento, o Advance XR-1 proporciona uma corrida suave e eficiente.</p>
+                            </div> 
+                            <button>Comprar</button>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./resources/assets/img/2.webp"height="200px" width="200px"  alt="Papete Top #2">
+                                <h3>Papete Top #2</h3>
+                                <p>Perfeito para os dias quentes de verão, o Papete Top #2 oferece conforto sem perder o estilo. Com seu design moderno, é a escolha ideal para quem valoriza a tendência do momento.</p>
+                            </div>
+                            <button>Comprar</button>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./resources/assets/img/3.webp" height="200px" width="200px" alt="Tenis Corrida #3">
+                                <h3>Tenis Corrida #3</h3>
+                                <p>O Tenis Corrida #3 foi projetado para corredores sérios. Com sua sola resistente e cabedal leve, ele oferece suporte e durabilidade, ajudando você a ir mais longe em suas corridas.</p>
+                            </div>
+                            <button>Comprar</button>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./resources/assets/img/4.webp" height="200px" width="200px" alt="Tenis PDT-42">
+                                <h3>Tenis PDT-42</h3>
+                                <p>Uma opção clássica para qualquer ocasião, o Tenis PDT-42 combina estilo e conforto. Seu design minimalista e atemporal torna-o uma escolha versátil para qualquer guarda-roupa.</p>
+                            </div>
+                            <button>Comprar</button>
+                        </article>
                     </div>
                 </div>
-                <input type="submit" value="Enviar">
-                <span id="submitMessage" class="hidden"></span>
-            </form>
-        </div>
-        <script src="./resources/js/plugins/jquery.min.js"></script>
-        <script src="./resources/js/plugins/jquery.mask.min.js"></script>
-        <script src="./resources/js/plugins/jquery.validate.min.js"></script>
-        <script src="./resources/js/main.js"></script>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p>© 2023 Loja EBAC. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </body>
 </html>
