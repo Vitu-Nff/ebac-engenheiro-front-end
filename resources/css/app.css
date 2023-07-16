@@ -22,147 +22,28 @@ h6 {
   opacity: 0.8;
 }
 
-.header {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-
-.center {
-  text-align: center;
-  border-radius: 15px;
-  padding: 30px;
-  max-width: 600px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  background-color: #fff;
-}
-
-.image {
-  width: 160px;
-  height: 100px;
-}
-
-input {
-  width: 100% !important;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 0.35rem;
-}
-
-input[type=submit] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007BFF;
-  color: #fff;
-  cursor: pointer;
-}
-
-.hint {
-  opacity: 0;
-  padding: 0;
-  max-height: 0px;
-  overflow: hidden;
-}
-
-input:focus ~.hint{
-  padding: 3px;
-  max-height: 20px;
-  overflow: hidden;
-  opacity: 0.6;
-}
-
-input[type=submit]:hover {
-  background-color: #0056b3;
-}
-
-#form {
-  text-align: left;
-}
-
-#form .formGroup {
-  margin-top: 1.5rem;
-  width: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#form .formRow {
-  display: flex;
-  width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  #form .formRow {
-    flex-direction: column;
-  }
-}
-
-#form label{
+.form-label {
   background-color: rgba(0,0,0,0.05);
   border-radius: 6px;
   padding: 4px 6px;
   font-size: 0.8rem;
   opacity: 0.8;
-  > span {
-    color: red;
+}
+
+.mobile-container {
+  border-radius: 15px;
+  padding: 30px;
+  width: min(100vw, 420px);
+  @media screen and (min-width: 500px) {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    background-color: #fff;
   }
 }
 
-#form #message.error {
-  color: red;
-  background-color: rgba(255, 0, 0, 0.05);
-}
-
-#form #message.success {
-  color: green;
-  background-color: rgba(0, 128, 0, 0.05);
-}
-
-#form #message.hide {
-  max-height: 0px;
-  overflow: hidden;
-  opacity: 0;
-  padding: 0;
-  margin: 0;
-}
-
-#form #message {
-  border-radius: 8px;
-  transition: 0.35s ease;
-  padding: 8px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  max-height: 50px;
-  overflow: hidden;
-  opacity: 1;
-}
-
-#form .invalid-feedback {
-    color: red;
-    font-size: 0.65rem;
-    background-color: unset;
-}
-
-#form .is-invalid {
-    border-color: red;
-}
-
-#form .is-valid {
-    border-color: green;
-    background-color: #00800005;
-}
-
-#form .hidden {
-    display: none;
-}
-
-#form #submitMessage.success {
-    color: green;
-    display: block;
-    text-align: center;
-    font-size: small;
+.form-label {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 6px;
+  padding: 4px 6px;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }

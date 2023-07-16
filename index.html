@@ -6,46 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EBAC - Formulário HTML/JS</title>
         <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
-        <link rel="stylesheet" href="./resources/css/app.css" />
+        <link rel="stylesheet" href="./resources/css/app.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
     <body>
-        <div class="center">
-            <div class="header">
+        <div class="mobile-container">
+            <div class="header text-center my-4">
                 <h1>Formulário</h1>
-                <h6>com Plugins jQuery</h6>
+                <h6 class="font-weight-normal text-muted">com Plugins jQuery</h6>
             </div>
             <form id="form">
-                <div class="formRow">
-                    <div class="formGroup">
-                        <label for="descNome">Nome Completo <span>*</span></label>
-                        <input type="text" id="DescNome" name="descNome" required><br>
-                    </div>
-                    <div class="formGroup">
-                        <label for="numCpf">CPF <span>*</span></label>
-                        <input type="text" id="NumCpf" name="numCpf" required><br>
-                    </div>
+                <div class="form-group">
+                    <label class="form-label" for="descNome">Nome Completo <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="DescNome" name="descNome" required>
                 </div>
-                <div class="formRow">
-                    <div class="formGroup">
-                        <label for="numTelefone">Telefone <span>*</span></label>
-                        <input type="text" id="NumTelefone" name="numTelefone" required><br>
-                    </div>
-                    <div class="formGroup">
-                        <label for="email">E-mail <span>*</span></label>
-                        <input type="text" id="Email" name="email" required><br>
-                    </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="Email" name="email" required>
                 </div>
-                <div class="formRow">
-                    <div class="formGroup">
-                        <label for="descEndereco">Endereço Completo <span>*</span></label>
-                        <input type="text" id="DescEndereco" name="descEndereco" required><br>
-                    </div>
-                    <div class="formGroup">
-                        <label for="numCep">CEP <span>*</span></label>
-                        <input type="text" id="NumCep" name="numCep" required><br>
-                    </div>
+                <div class="form-group">
+                    <label class="form-label" for="numTelefone">Telefone <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="NumTelefone" name="numTelefone" required>
                 </div>
-                <input type="submit" value="Enviar">
-                <span id="submitMessage" class="hidden"></span>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                <p id="submitMessage" class="text-success form-text small w-100 hidden"></p>
             </form>
         </div>
         <script src="./resources/js/plugins/jquery.min.js"></script>
