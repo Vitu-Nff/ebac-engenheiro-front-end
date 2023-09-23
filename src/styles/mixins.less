@@ -1,0 +1,12 @@
+/**
+ * MIXINS
+ * 
+ * Funções e mixins utilitários que são usados em arquivos LESS em todo o projeto.
+ */
+
+
+.breakpoint(@point) when (isstring(@point)) {
+  @media screen and @point {
+    @content();
+  }
+}
